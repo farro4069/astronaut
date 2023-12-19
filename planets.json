@@ -1,0 +1,10 @@
+[
+	{"name": "Mercury", "distance": 58.0, "radius": 2.4, "orbit": 88, "moon": [], "fact": ["Mercury is the nearest planet to the Sun"], "filename": "mercury.png"},
+	{"name": "Venus", "distance": 108.2, "radius": 6.1, "orbit": 225, "moon": [], "fact": ["Venus can be seen from Earth and is often called the Evening Star"], "filename": "venus.png"},
+	{"name": "Earth", "distance": 149.6, "radius": 6.4, "orbit": 365, "moon": ["Luna"], "fact": ["Two thirds of the surface of Earth is covered with water"], "filename": "earth.png"},
+	{"name": "Mars", "distance": 227.9, "radius": 3.4, "orbit": 687, "moon": ["Phobos", "Deimos"], "fact": ["Mars is called the red planet"], "filename": "mars.png"},
+	{"name": "Jupiter", "distance": 778.5, "radius": 69.9, "orbit": 4332, "moon": ["Europa", "Io", "Ganymede", "Calisto", "Amalthea", "Many (95) moons"], "fact": ["Jupiter is the largest of the planets"], "filename": "jupiter.png"},
+	{"name": "Saturn", "distance": 1434, "radius": 58.2, "orbit": 10592, "moon": ["Titan", "Enceladus", "Mimas", "Dione", "Iapetus", "Tethys", "Hyperion", "Many (146) moons"], "fact": ["Saturn has rings"], "filename": "saturn.png"},
+	{"name": "Uranus", "distance": 2871, "radius": 25.4, "orbit": 30681, "moon": ["Titania", "Miranda", "Cupid", "Oberon", "Ariel", "Umbriel", "Cressida", "Many (27) moons"], "fact": ["Uranus is an ice giant."], "filename": "uranus.png"},
+	{"name": "Neptune", "distance": 4495, "radius": 24.6, "orbit": 60266, "moon": ["Triton", "Hippocamp", "Nereid", "Galatea", "Despina","Many () moons"], "fact": ["Neptune is an ice giant"], "filename": "neptune.png"}
+]

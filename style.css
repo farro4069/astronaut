@@ -1,0 +1,202 @@
+@font-face {
+	font-family: 'HankenGrotesk';
+	font-display: swap;
+	font-weight: 100 900;
+	src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+	--clr-background: linear-gradient(hsl(200, 58%, 50%, 0.9), hsl(210, 58%, 60%, 0.8));
+	--clr-nav: hsl(208, 60%, 40%, 1);
+	--clr-red: hsl(0, 90%, 50%);
+	--clr-blue: hsl(208, 90%, 30%, 0.9);
+	--clr-yellow: hsl(70, 90%, 50%, 0.9);
+	--clr-white: hsl(208, 50%, 90%, 0.9);
+	--clr-black: hsl(0, 0%, 10%, 0.6);
+	--clr-shadow: hsl(0, 90%, 90%, 0.5);
+	--clr-border: hsl(0, 0%, 100%);
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--clr-background);
+	height: 100vh;
+	overflow: hidden;
+	font-family: HankenGrotesk;
+	font-weight: 300;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footer__logo {
+	height: 40px;
+	aspect-ratio: 1/1;
+}
+
+main { 
+	margin: auto;
+	width:100%;
+	height: calc(100vh - 4rem);
+}
+
+.container { 
+	margin: 0 auto;
+	height: 100vh;
+	display: block;
+	position: relative;
+}
+
+.button__home {
+	position: absolute;
+	bottom: 12rem;
+	right: 5rem;
+	width: 10rem;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	color: var(--clr-yellow);
+	background: var(--clr-red);
+	box-shadow: 0.25rem 0.25rem 0rem 0px var(--clr-shadow);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1rem;
+	text-transform: uppercase;
+}
+
+.button__home:hover {
+	cursor: pointer;
+	color: var(--clr-white);
+	box-shadow: none;
+
+}
+
+.header__message > h1 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.header__message > h1 > span {
+	color: var(--clr-black);
+	font-size: 2.5rem;
+}
+
+.missions {
+	position: absolute;
+	top: 5vh;
+	right: 5vw;
+	list-style: none;
+	font-size: 1.25rem;
+	padding: 1em;
+	color: var(--clr-white);
+	background: var(--clr-nav);
+	border-radius: 0.5rem;
+}
+
+.missions li {
+	font-size: 1rem;
+	padding: 0.25em 1em;
+	cursor: pointer;
+}
+
+.missions li:hover {
+	background: var(--clr-blue);
+}
+
+.card__ship {
+	position: relative;
+	top: 23vh;
+	left: 15vw;
+	height: 160px;
+	width: 50vw;
+	transform: rotate(0deg);
+}
+
+.spaceship {
+	position: absolute;
+	left: 0vw;
+	z-index: 100;
+	transition: transform ease 100ms;
+}
+
+.lunar__base {
+	position: absolute;
+	left: 0;
+	right: 0;
+	transform: translateY(900px) scale(2);
+	transition: transform ease 100ms;
+}
+
+.countdown {
+	position: absolute;
+	top: 5vh;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 70vh;
+	height: 5rem;
+	background-color: var(--clr-blue);
+	color: var(--clr-white);
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+}
+
+.countdown p {
+	font-size: 4rem;
+	color: var(--clr-yellow);
+}
+
+.planet {
+	position: absolute;
+	top: 7vh;
+	width: 30vh;
+	aspect-ratio: 1/1;
+	transition: transform ease 100ms;
+}
+
+.planet[num='0'] {
+	left: 40vw;
+	transform: scale(0.01);
+}
+
+.planet[num='1'] {
+	top: 6vh;
+	left: 50vw;
+	transform: scale(0.01);
+}
+
+.planet[num='2'] {
+	top: 5vh;
+	left: 60vw;
+	transform: scale(0.01);
+}
+
+.planet[num='3'] {
+	top: 4vh;
+	left: 70vw;
+	transform: scale(0.01);
+}
+
+.planet.destination {
+	top:3vh;
+	left: 80vw;
+	transform: scale(0.01);
+}
